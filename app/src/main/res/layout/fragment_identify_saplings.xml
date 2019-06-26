@@ -1,0 +1,101 @@
+
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:scrollbars="vertical"
+tools:context="Fragment.IdentifySaplings">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/TextViewTitle"
+        android:background="@drawable/textborder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Details"
+        android:textSize="30sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/EditFullName"
+        android:layout_height="0dp"
+        android:hint="Full Name"
+        android:layout_marginTop="60dp"
+        android:inputType="textPersonName"
+        android:layout_width="fill_parent"
+        android:layout_weight="7">
+    </EditText>
+
+    <EditText
+        android:id="@+id/EditCategory"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:hint="Category"
+        android:inputType="textPersonName"
+        android:layout_width="fill_parent"
+        android:layout_weight="6">
+    </EditText>
+
+    <EditText
+        android:id="@+id/EditStatus"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:hint="Status"
+        android:inputType="textPersonName"
+        android:layout_width="fill_parent"
+        android:layout_weight="6">
+    </EditText>
+
+    <EditText
+        android:id="@+id/EditLocation1"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:hint="Location"
+        android:inputType="textPersonName"
+        android:layout_width="fill_parent"
+        android:layout_weight="6">
+    </EditText>
+    <EditText
+        android:id="@+id/EditLocation2"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:inputType="textPersonName"
+        android:layout_width="fill_parent"
+        android:layout_weight="6">
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_blue"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:elevation="100dp"
+            android:textColor="#ffffff"
+            android:textSize="35sp"
+            android:onClick="Submit"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+</ScrollView>
