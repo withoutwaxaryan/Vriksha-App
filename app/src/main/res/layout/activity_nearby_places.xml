@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.NearbyPlaces">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Suggested Nearby Places"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cardList"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:textAllCaps="false"
+        android:background="@drawable/button_blue"
+        android:elevation="100dp"
+        android:text="Plant Now"
+        android:textColor="#ffffff"
+        android:textSize="40sp" />
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".NearbyPlaces"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="Suggested Nearby Places"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card1"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/C1_TV2_Address"
+                                android:layout_toStartOf="@id/C1_IV1"
+                                android:layout_toLeftOf="@id/C1_IV1"
+                                android:layout_toEndOf="@id/C1_TV4_Num_Space"
+                                android:layout_toRightOf="@id/C1_TV4_Num_Space"
+                                android:layout_margin="15dp"
+                                app:cardBackgroundColor="#337DFF"
+                                app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/ic_star_black_24dp" />
+
+                                    <TextView
+                                        android:layout_width="30dp"
+                                        android:layout_height="40dp"
+                                        android:text="5"
+                                        android:layout_marginLeft="5dp"
+                                        android:textSize="35sp"
+                                        android:textColor="#ffffff"/>
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                                <ImageView
+                                    android:id="@+id/C1_IV1"
+                                    android:layout_width="140dp"
+                                    android:layout_height="150dp"
+                                    android:src="@drawable/logo"
+                                    android:layout_toRightOf="@id/C1_TV2_Address"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginLeft="2dp"/>
+
+                                <TextView
+                                    android:id="@+id/C1_TV1_Name"
+                                    android:layout_width="280dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_height="20dp"
+                                    android:text="Bhagwati Temple"
+                                    android:textAllCaps="false"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/C1_TV2_Address"
+                                    android:layout_width="280dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_below="@id/C1_TV1_Name"
+                                    android:layout_height="20dp"
+                                    android:textAllCaps="false"
+                                    android:text="Ring Road,Chhend Colony,Rourkela,Odisha"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:id="@+id/C1_TV3_Num_Trees"
+                                    android:layout_width="45dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_below="@id/C1_TV2_Address"
+                                    android:layout_marginLeft="22dp"
+                                    android:layout_height="40dp"
+                                    android:textAllCaps="false"
+                                    android:text="13"
+                                    android:textColor="#33FF4F"
+                                    android:textSize="30sp" />
+
+                                 <TextView
+                                    android:id="@+id/C1_TV4_Num_Space"
+                                    android:layout_width="45dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_below="@id/C1_TV2_Address"
+                                     android:layout_toRightOf="@id/C1_TV3_Num_Trees"
+                                    android:layout_marginLeft="66dp"
+                                    android:layout_height="40dp"
+                                    android:textAllCaps="false"
+                                    android:text="8"
+                                     android:textColor="#33FF4F"
+                                    android:textSize="30sp" />
+
+                                <TextView
+                                    android:id="@+id/C1_TV5_Text_Trees"
+                                    android:layout_width="90dp"
+                                    android:layout_below="@id/C1_TV3_Num_Trees"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_height="20dp"
+                                    android:textAllCaps="false"
+                                    android:text="Trees Planted"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:id="@+id/C1_TV6_Text_Space"
+                                    android:layout_width="95dp"
+                                    android:layout_below="@id/C1_TV4_Num_Space"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_toRightOf="@id/C1_TV5_Text_Trees"
+                                    android:layout_height="20dp"
+                                    android:textAllCaps="false"
+                                    android:text="Space Available"
+                                    android:textSize="13sp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="20dp"
+                    android:layout_marginBottom="100dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_blue"
+                    android:elevation="100dp"
+                    android:text="Plant Now"
+                    android:textColor="#ffffff"
+                    android:textSize="40sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>-->

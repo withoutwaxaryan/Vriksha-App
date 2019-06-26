@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
 
     // tags used to attach the fragments
     private static final String TAG_HOME = "home";
-    private static final String TAG_NEARBY_PLACES = "nearby_places";
     private static final String TAG_AUGMENTED_REALITY = "augmented_reality";
     private static final String TAG_IDENTIFY_SAPLINGS = "identify_saplings";
     private static final String TAG_SOCIALISE = "socialise";
@@ -197,10 +196,6 @@ public class MainActivity extends AppCompatActivity {
                 // home
                 Home home = new Home();
                 return home;
-            case 2:
-                // nearby places
-                NearbyPlaces nearbyplaces = new NearbyPlaces();
-                return nearbyplaces;
             case 3:
                 // augmented reality
                 AugmentedReality augmentedreality = new AugmentedReality();
@@ -260,8 +255,10 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     case R.id.nav_nearby_places:
                         navItemIndex = 2;
-                        CURRENT_TAG = TAG_NEARBY_PLACES;
-                        break;
+                        // launch new intent instead of loading fragment
+                        startActivity(new Intent(MainActivity.this, NearbyPlaces.class));
+                        drawer.closeDrawers();
+                        return true;
                     case R.id.nav_augmented_reality:
                         navItemIndex = 3;
                         CURRENT_TAG = TAG_AUGMENTED_REALITY;
@@ -282,11 +279,11 @@ public class MainActivity extends AppCompatActivity {
                         navItemIndex =7;
                         CURRENT_TAG = TAG_SETTINGS;
                         break;
-                    case R.id.nav_privacy_policy:
+                  /*  case R.id.nav_privacy_policy:
                         // launch new intent instead of loading fragment
                         startActivity(new Intent(MainActivity.this, PrivacyPolicy.class));
                         drawer.closeDrawers();
-                        return true;
+                        return true;*/
                     default:
                         navItemIndex = 0;
                 }

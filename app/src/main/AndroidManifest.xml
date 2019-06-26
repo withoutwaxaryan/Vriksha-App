@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.UpdatedSapling"></activity>
+        <activity android:name=".Activity.NearbyPlaces"></activity>
+        <activity android:name=".Activity.UpdatedSapling" />
         <activity android:name=".Activity.TrackPlantations" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -30,7 +31,6 @@
             android:value="@string/map_key" />
 
         <activity android:name=".Activity.MainActivity" />
-        <activity android:name=".Activity.PrivacyPolicy" />
         <activity android:name=".Activity.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
