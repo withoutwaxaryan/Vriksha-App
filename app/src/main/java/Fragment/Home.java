@@ -1,6 +1,7 @@
 package Fragment;
 
-
+import android.content.Context;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,9 +12,6 @@ import android.view.ViewGroup;
 
 import com.example.vriksha.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class Home extends Fragment {
 
 

@@ -13,7 +13,7 @@ public class SplashScreen extends AppCompatActivity {
 
 
     /** Duration of wait **/
-    private final int SPLASH_DISPLAY_LENGTH = 4000;
+    private final int SPLASH_DISPLAY_LENGTH = 2000;
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);

@@ -54,7 +54,6 @@
             android:layout_toRightOf="@id/TV_Address"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="2dp"/>
-apk/res-auto"
         <TextView
             android:id="@+id/TV_Name"
             android:layout_width="280dp"

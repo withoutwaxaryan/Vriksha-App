@@ -8,23 +8,23 @@
             android:title="@string/nav_home" />
          <item
             android:id="@+id/nav_track_plantations"
-            android:icon="@drawable/v"
+            android:icon="@drawable/ic_location_on_black_24dp"
             android:title="@string/nav_track_plantations" />
         <item
             android:id="@+id/nav_nearby_places"
-            android:icon="@drawable/v"
+            android:icon="@drawable/ic_compare_arrows_black_24dp"
             android:title="@string/nav_nearby_places" />
         <item
             android:id="@+id/nav_augmented_reality"
-            android:icon="@drawable/v"
+            android:icon="@drawable/ic_menu_camera"
             android:title="@string/nav_augmented_reality" />
         <item
             android:id="@+id/nav_identify_saplings"
-            android:icon="@drawable/v"
+            android:icon="@drawable/ic_spa_black_24dp"
             android:title="@string/nav_identify_saplings" />
         <item
             android:id="@+id/nav_socialise"
-            android:icon="@drawable/v"
+            android:icon="@drawable/ic_people_black_24dp"
             android:title="@string/nav_socialise" />
         <item
             android:id="@+id/nav_notifications"

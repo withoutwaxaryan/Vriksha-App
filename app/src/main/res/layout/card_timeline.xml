@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="360dp"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/Timeline_IV_Profile_Pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/aryan"
+            />
+
+        <TextView
+            android:id="@+id/Timeline_TV_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/Timeline_IV_Profile_Pic"
+            android:text="Name "
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/Timeline_TV_Location"
+            android:layout_below="@id/Timeline_TV_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/Timeline_IV_Profile_Pic"
+            android:text="Location "
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/Timeline_TV_Message"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/Timeline_TV_Location"
+            android:text="Aryan just planted his first plant "/>
+
+        <ImageView
+            android:id="@+id/Timeline_IV_Content"
+            android:layout_below="@id/Timeline_TV_Message"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/trek"/>
+
+         <Button
+             android:id="@+id/Timeline_Button_Like"
+             android:layout_below="@id/Timeline_IV_Content"
+             android:layout_width="130dp"
+             android:layout_height="40dp"
+             android:text="LIKE"
+             android:textSize="18sp"/>
+        <Button
+            android:id="@+id/Timeline_Button_Share"
+            android:layout_below="@id/Timeline_IV_Content"
+            android:layout_toRightOf="@id/Timeline_Button_Like"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="SHARE"
+            android:textSize="18sp"/>
+        <Button
+            android:id="@+id/Timeline_Button_Know_More"
+            android:layout_below="@id/Timeline_IV_Content"
+            android:layout_toRightOf="@id/Timeline_Button_Share"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="KNOW MORE"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

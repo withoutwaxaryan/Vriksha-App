@@ -25,9 +25,9 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="90dp"
         android:layout_alignParentBottom="true"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         android:textAllCaps="false"
         android:background="@drawable/button_blue"
         android:elevation="100dp"

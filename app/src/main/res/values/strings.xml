@@ -31,6 +31,7 @@
         <item>Settings</item>
     </string-array>
 
+
     <string name="activity_title_track_plantations">Track Plantations</string>
     <string name="activity_title_nearby_places">Nearby Places</string>
     <string name="action_clear_all">Clear All</string>
