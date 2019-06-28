@@ -116,21 +116,6 @@ public class MainActivity extends AppCompatActivity {
     private void loadNavHeader() {
         // name, website
         txtName.setText("Aryan Gupta");
-//        txtWebsite.setText("www.androidhive.info");
-
-       /* // loading header background image
-        Glide.with(this).load(urlNavHeaderBg)
-                .crossFade()
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .into(imgNavHeaderBg);
-
-        // Loading profile image
-        Glide.with(this).load(urlProfileImg)
-                .crossFade()
-                .thumbnail(0.5f)
-                .bitmapTransform(new CircleTransform(this))
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .into(imgProfile);*/
 
         // showing dot next to notifications label
         navigationView.getMenu().getItem(6).setActionView(R.layout.menu_dot);
@@ -279,11 +264,6 @@ public class MainActivity extends AppCompatActivity {
                         navItemIndex =7;
                         CURRENT_TAG = TAG_SETTINGS;
                         break;
-                  /*  case R.id.nav_privacy_policy:
-                        // launch new intent instead of loading fragment
-                        startActivity(new Intent(MainActivity.this, PrivacyPolicy.class));
-                        drawer.closeDrawers();
-                        return true;*/
                     default:
                         navItemIndex = 0;
                 }
