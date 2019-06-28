@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
 
     // tags used to attach the fragments
     private static final String TAG_HOME = "home";
-    private static final String TAG_AUGMENTED_REALITY = "augmented_reality";
     private static final String TAG_IDENTIFY_SAPLINGS = "identify_saplings";
     private static final String TAG_SOCIALISE = "socialise";
     private static final String TAG_NOTIFICATIONS = "notifications";
@@ -181,11 +180,6 @@ public class MainActivity extends AppCompatActivity {
                 // home
                 Home home = new Home();
                 return home;
-            case 3:
-                // augmented reality
-                AugmentedReality augmentedreality = new AugmentedReality();
-                return augmentedreality;
-
             case 4:
                 // identify saplings
                 IdentifySaplings identifysaplings = new IdentifySaplings();
@@ -246,8 +240,9 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     case R.id.nav_augmented_reality:
                         navItemIndex = 3;
-                        CURRENT_TAG = TAG_AUGMENTED_REALITY;
-                        break;
+                        startActivity(new Intent(MainActivity.this, AugmentedReality.class));
+                        drawer.closeDrawers();
+                        return true;
                     case R.id.nav_identify_saplings:
                         navItemIndex = 4;
                         CURRENT_TAG = TAG_IDENTIFY_SAPLINGS;
